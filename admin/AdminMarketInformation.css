@@ -1,0 +1,627 @@
+/* =====================================================
+   MAIN PAGE
+===================================================== */
+
+.admin-market-info {
+  padding: 30px 35px;
+  background: #f7f8f8;
+  min-height: calc(100vh - 80px);
+  font-family: Arial, sans-serif;
+}
+
+
+/* =====================================================
+   PAGE HEADER
+===================================================== */
+
+/* =====================================================
+   MARKET INFORMATION BANNER
+===================================================== */
+
+/* =====================================================
+   MARKET INFORMATION BANNER
+===================================================== */
+
+.admin-market-banner {
+
+  position: relative;
+
+  min-height: 180px;
+
+  margin-bottom: 30px;
+
+  padding: 28px 35px;
+
+  box-sizing: border-box;
+
+  border-radius: 14px;
+
+  background: linear-gradient(
+    135deg,
+    #dff5e9 0%,
+    #c8ecd9 100%
+  );
+
+  color: #146c43;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  overflow: hidden;
+
+  box-shadow: 0 6px 18px rgba(20, 108, 67, 0.10);
+}
+
+
+/* =====================================================
+   BANNER CONTENT
+===================================================== */
+
+.market-banner-content {
+
+  position: relative;
+
+  z-index: 2;
+
+  max-width: 650px;
+}
+
+
+.market-banner-label {
+
+  display: inline-block;
+
+  margin-bottom: 8px;
+
+  font-size: 9px;
+
+  font-weight: 700;
+
+  letter-spacing: 1.5px;
+
+  color: #438060;
+}
+
+
+.admin-market-banner h1 {
+
+  margin: 0 0 8px;
+
+  font-size: 25px;
+
+  font-weight: 700;
+
+  color: #146c43;
+}
+
+
+.admin-market-banner p {
+
+  margin: 0;
+
+  font-size: 11px;
+
+  line-height: 18px;
+
+  color: #47705a;
+}
+
+
+/* =====================================================
+   BANNER DECORATION
+===================================================== */
+
+.market-banner-decoration {
+
+  position: absolute;
+
+  right: -30px;
+
+  top: -50px;
+
+  width: 250px;
+
+  height: 250px;
+}
+
+
+.market-circle {
+
+  position: absolute;
+
+  border-radius: 50%;
+
+  background-color: rgba(20, 108, 67, 0.08);
+}
+
+
+.market-circle.circle-one {
+
+  width: 210px;
+
+  height: 210px;
+
+  right: 0;
+
+  top: 20px;
+}
+
+
+.market-circle.circle-two {
+
+  width: 140px;
+
+  height: 140px;
+
+  right: 55px;
+
+  top: 55px;
+
+  background-color: rgba(20, 108, 67, 0.07);
+}
+
+
+.market-circle.circle-three {
+
+  width: 75px;
+
+  height: 75px;
+
+  right: 90px;
+
+  top: 90px;
+
+  background-color: rgba(20, 108, 67, 0.06);
+}
+/* =====================================================
+   INFORMATION CARD
+===================================================== */
+
+.admin-info-card {
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 25px;
+  margin-bottom: 25px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+
+/* =====================================================
+   CARD HEADER
+===================================================== */
+
+.admin-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 22px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.admin-card-title {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.admin-card-title > svg {
+  font-size: 24px;
+  color: #18b889;
+}
+
+.admin-card-title h2 {
+  margin: 0;
+  color: #146c43;
+  font-size: 20px;
+}
+
+.admin-card-title p {
+  margin: 5px 0 0;
+  color: #777;
+  font-size: 13px;
+}
+
+
+/* =====================================================
+   BUTTONS
+===================================================== */
+
+.admin-edit-button,
+.admin-add-button,
+.save-button,
+.cancel-button {
+  border: none;
+  border-radius: 6px;
+  padding: 10px 16px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+}
+
+.admin-edit-button {
+  background: #eaf7f1;
+  color: #146c43;
+}
+
+.admin-edit-button:hover {
+  background: #d7f0e5;
+}
+
+.admin-add-button {
+  background: #146c43;
+  color: white;
+}
+
+.admin-add-button:hover {
+  background: #0f5936;
+}
+
+
+/* =====================================================
+   OVERVIEW
+===================================================== */
+
+.overview-display {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.overview-display div {
+  background: #f8faf9;
+  border: 1px solid #e4e9e6;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+}
+
+.overview-display strong {
+  display: block;
+  color: #146c43;
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+.overview-display span {
+  color: #555;
+  font-size: 13px;
+}
+
+
+/* =====================================================
+   OPERATING DAYS
+===================================================== */
+
+.operating-display {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.operating-display div {
+  padding: 20px;
+  background: #f8faf9;
+  border-radius: 8px;
+  border: 1px solid #e4e9e6;
+}
+
+.operating-display span {
+  display: block;
+  color: #777;
+  font-size: 13px;
+  margin-bottom: 8px;
+}
+
+.operating-display strong {
+  color: #146c43;
+  font-size: 17px;
+}
+
+
+/* =====================================================
+   ABOUT
+===================================================== */
+
+.about-display p {
+  margin: 0;
+  line-height: 1.7;
+  color: #444;
+  font-size: 15px;
+}
+
+
+/* =====================================================
+   CONTACT
+===================================================== */
+
+.contact-display {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.contact-display div {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 18px;
+  background: #f8faf9;
+  border-radius: 8px;
+}
+
+.contact-display svg {
+  color: #18b889;
+  font-size: 20px;
+}
+
+.contact-display span {
+  color: #444;
+}
+
+
+/* =====================================================
+   FORMS
+===================================================== */
+
+.admin-edit-form {
+  margin-top: 10px;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.full-width {
+  grid-column: 1 / -1;
+}
+
+.admin-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.admin-form-group label {
+  font-weight: 600;
+  color: #333;
+  font-size: 13px;
+}
+
+.admin-form-group input,
+.admin-form-group textarea,
+.admin-form-group select {
+  border: 1px solid #ccc;
+  border-radius: 7px;
+  padding: 12px;
+  font-size: 14px;
+  font-family: inherit;
+  outline: none;
+}
+
+.admin-form-group input:focus,
+.admin-form-group textarea:focus,
+.admin-form-group select:focus {
+  border-color: #18b889;
+  box-shadow: 0 0 0 2px rgba(24, 184, 137, 0.1);
+}
+
+.admin-form-group textarea {
+  resize: vertical;
+}
+
+
+/* =====================================================
+   FORM ACTIONS
+===================================================== */
+
+.form-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.save-button {
+  background: #146c43;
+  color: white;
+}
+
+.save-button:hover {
+  background: #0f5936;
+}
+
+.cancel-button {
+  background: #eeeeee;
+  color: #444;
+}
+
+.cancel-button:hover {
+  background: #dddddd;
+}
+
+
+/* =====================================================
+   ANNOUNCEMENT FORM
+===================================================== */
+
+.announcement-form {
+  background: #f8faf9;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 18px;
+}
+
+
+/* =====================================================
+   ANNOUNCEMENTS
+===================================================== */
+
+.announcement-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.announcement-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 16px 5px;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.announcement-icon {
+  width: 40px;
+  height: 40px;
+  background: #e5f8f1;
+  color: #146c43;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.announcement-content {
+  flex: 1;
+}
+
+.announcement-content strong {
+  display: block;
+  color: #333;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.announcement-content span {
+  color: #888;
+  font-size: 12px;
+}
+
+
+/* =====================================================
+   HIGHLIGHTS
+===================================================== */
+
+.highlight-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.highlight-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 18px;
+  background: #f8faf9;
+  border: 1px solid #e6ebe8;
+  border-radius: 8px;
+}
+
+.highlight-icon {
+  color: #18b889;
+  font-size: 20px;
+  margin-top: 3px;
+}
+
+.highlight-content {
+  flex: 1;
+}
+
+.highlight-content strong {
+  display: block;
+  color: #146c43;
+  font-size: 15px;
+  margin-bottom: 6px;
+}
+
+.highlight-content p {
+  margin: 0;
+  color: #666;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+
+/* =====================================================
+   DELETE BUTTON
+===================================================== */
+
+.delete-button {
+  border: none;
+  background: #fff0f0;
+  color: #d9534f;
+  width: 35px;
+  height: 35px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.delete-button:hover {
+  background: #ffe0e0;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 1000px) {
+
+  .overview-display {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .contact-display {
+    grid-template-columns: 1fr;
+  }
+
+  .highlight-list {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+
+@media (max-width: 700px) {
+
+  .admin-market-info {
+    padding: 20px;
+  }
+
+  .admin-card-header {
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .overview-display {
+    grid-template-columns: 1fr;
+  }
+
+  .operating-display {
+    grid-template-columns: 1fr;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .announcement-form {
+    grid-template-columns: 1fr;
+  }
+
+  .full-width {
+    grid-column: auto;
+  }
+
+}

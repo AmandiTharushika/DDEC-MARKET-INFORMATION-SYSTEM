@@ -1,0 +1,318 @@
+.admin-transport-page {
+  min-height: 100vh;
+  background: #f7f8f7;
+  padding: 35px 50px;
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   TRANSPORT BANNER
+========================================================= */
+
+.transport-header {
+  width: 100%;
+  min-height: 135px;
+
+  margin-bottom: 25px;
+
+  padding: 25px 30px;
+
+  box-sizing: border-box;
+
+  border-radius: 14px;
+
+  background: linear-gradient(
+    135deg,
+    #0b4d35,
+    #176b48,
+    #63b47f
+  );
+
+  box-shadow: 0 4px 15px rgba(18, 107, 82, 0.15);
+
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+}
+
+
+/* =========================================================
+   TRANSPORT BANNER TEXT
+========================================================= */
+
+.transport-header h1 {
+  margin: 0;
+
+  color: white;
+
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.transport-header p {
+  margin: 8px 0 0;
+
+  color: #d9f1e3;
+
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+
+/* =========================================================
+   ADD VEHICLE BUTTON
+========================================================= */
+
+.transport-header .add-transport-btn {
+  justify-self: end;
+
+  background: white;
+
+  color: #126b52;
+
+  border: none;
+
+  padding: 12px 20px;
+
+  border-radius: 7px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 8px;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  white-space: nowrap;
+
+  transition: all 0.25s ease;
+}
+
+.transport-header .add-transport-btn:hover {
+  background: #e8f5ed;
+
+  transform: translateY(-2px);
+}
+
+/* ================= FORM CARD ================= */
+
+.transport-form-card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 25px;
+  margin-bottom: 25px;
+}
+
+.transport-form-card h2 {
+  color: #146c43;
+  font-size: 20px;
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+.form-row {
+  display: flex;
+  gap: 25px;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.form-group input,
+.form-group select {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: #146c43;
+}
+
+/* ================= FORM BUTTONS ================= */
+
+.form-buttons {
+  display: flex;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.save-btn {
+  background: #146c43;
+  color: white;
+  border: none;
+  padding: 11px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.save-btn:hover {
+  background: #0f5736;
+}
+
+.cancel-btn {
+  background: #eee;
+  color: #333;
+  border: none;
+  padding: 11px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* ================= MAIN CARD ================= */
+
+.transport-card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 25px;
+}
+
+.card-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.card-title h2 {
+  color: #146c43;
+  font-size: 21px;
+  margin: 0;
+}
+
+.card-title p {
+  color: #777;
+  font-size: 13px;
+  margin-top: 6px;
+}
+
+.vehicle-count {
+  background: #e8f5ee;
+  color: #146c43;
+  padding: 8px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+/* ================= TABLE ================= */
+
+.transport-table-container {
+  overflow-x: auto;
+}
+
+.transport-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.transport-table th {
+  background: #f4f6f5;
+  color: #333;
+  text-align: left;
+  padding: 14px;
+  font-size: 13px;
+  border-bottom: 1px solid #ddd;
+}
+
+.transport-table td {
+  padding: 15px 14px;
+  border-bottom: 1px solid #eee;
+  color: #444;
+  font-size: 14px;
+}
+
+.transport-table tbody tr:hover {
+  background: #fafafa;
+}
+
+/* ================= STATUS ================= */
+
+.status {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.available {
+  background: #e4f6eb;
+  color: #146c43;
+}
+
+.unavailable {
+  background: #fdeaea;
+  color: #c0392b;
+}
+
+/* ================= DELETE ================= */
+
+.delete-btn {
+  background: #fff;
+  color: #c0392b;
+  border: 1px solid #e0b4b4;
+  padding: 7px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background: #c0392b;
+  color: white;
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 900px) {
+
+  .admin-transport-page {
+    padding: 25px 20px;
+  }
+
+  .transport-header {
+    grid-template-columns: 1fr;
+    gap: 18px;
+
+    padding: 24px;
+  }
+
+  .transport-header .add-transport-btn {
+    justify-self: start;
+  }
+
+  .transport-header h1 {
+    font-size: 24px;
+  }
+
+  .form-row {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .transport-card {
+    padding: 15px;
+  }
+}

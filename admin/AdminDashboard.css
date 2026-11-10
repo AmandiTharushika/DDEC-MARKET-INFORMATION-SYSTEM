@@ -1,0 +1,829 @@
+/* =========================================================
+   ADMIN DASHBOARD
+========================================================= */
+
+.admin-dashboard {
+  min-height: calc(100vh - 80px);
+  display: flex;
+  align-items: stretch;
+  background-color: #ffffff;
+}
+
+
+/* =========================================================
+   SIDEBAR
+========================================================= */
+
+.admin-sidebar {
+  width: 220px;
+  min-height: calc(120vh - 80px);
+  height: auto;
+
+  background-color: #117849;
+
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+
+  flex-shrink: 0;
+}
+
+
+/* =========================================================
+   DDEC BRAND / LOGO
+========================================================= */
+
+.sidebar-brand {
+  text-align: center;
+
+  padding: 20px 12px 18px;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.35);
+}
+
+
+/* DDEC Logo */
+
+.ddec-logo {
+  width: 65px;
+  height: 65px;
+
+  object-fit: contain;
+
+  display: block;
+
+  margin: 0 auto 8px;
+}
+
+
+/* DDEC */
+
+.sidebar-brand h2 {
+  margin: 0 0 6px;
+
+  font-size: 18px;
+
+  font-weight: 700;
+
+  color: white;
+}
+
+
+/* Dambulla Dedicated / Economic Centre */
+
+.sidebar-brand p {
+  margin: 1px 0;
+
+  font-size: 10px;
+
+  line-height: 14px;
+
+  color: rgba(255, 255, 255, 0.92);
+}
+
+
+/* Market Information System */
+
+.sidebar-brand span {
+  display: block;
+
+  margin-top: 8px;
+
+  font-size: 9px;
+
+  line-height: 13px;
+
+  color: rgba(255, 255, 255, 0.75);
+}
+
+
+/* =========================================================
+   SIDEBAR MENU
+========================================================= */
+
+.sidebar-menu {
+  padding: 20px 12px;
+
+  flex: 1;
+
+  background-color: transparent;
+}
+
+
+/* All Sidebar Links */
+
+.sidebar-item {
+  display: block;
+
+  width: 100%;
+
+  padding: 11px 12px;
+
+  margin-bottom: 7px;
+
+  box-sizing: border-box;
+
+  border: none;
+
+  border-radius: 6px;
+
+  background: transparent;
+
+  color: white;
+
+  text-align: left;
+
+  text-decoration: none;
+
+  font-size: 11px;
+
+  cursor: pointer;
+
+  transition: background-color 0.2s ease;
+}
+
+
+/* Hover */
+
+.sidebar-item:hover {
+  background-color: rgba(255, 255, 255, 0.20);
+
+  color: white;
+
+  text-decoration: none;
+}
+
+
+/* Active */
+
+.sidebar-item.active {
+  background-color: rgba(255, 255, 255, 0.35);
+
+  color: white;
+
+  font-weight: 600;
+
+  text-decoration: none;
+}
+
+
+/* =========================================================
+   SIDEBAR BOTTOM
+========================================================= */
+
+.sidebar-bottom {
+  padding: 15px 12px;
+}
+
+
+/* Admin User */
+
+.admin-user {
+  border-top: 1px solid rgba(255, 255, 255, 0.6);
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+
+  padding: 18px 12px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 15px;
+
+  font-size: 12px;
+}
+
+
+/* User Icon */
+
+.admin-user svg {
+  font-size: 22px;
+
+  color: #b8b8b8;
+}
+
+
+/* Logout */
+
+.logout-button {
+  width: 100%;
+
+  margin-top: 15px;
+
+  padding: 10px;
+
+  border: none;
+
+  border-radius: 5px;
+
+  background: transparent;
+
+  color: white;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  font-size: 11px;
+
+  text-align: left;
+
+  cursor: pointer;
+}
+
+
+/* Logout Hover */
+
+.logout-button:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+
+/* =========================================================
+   MAIN CONTENT
+========================================================= */
+
+.admin-main {
+  flex: 1;
+
+  min-width: 0;
+
+  background-color: #ffffff;
+}
+
+
+/* =========================================================
+   DASHBOARD HEADER
+========================================================= */
+
+.admin-dashboard-header {
+  height: 58px;
+
+  border-bottom: 1px solid #dddddd;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  padding: 0 18px;
+
+  box-sizing: border-box;
+}
+
+
+.admin-dashboard-header h1 {
+  margin: 0;
+
+  font-size: 15px;
+
+  color: #111111;
+}
+
+
+/* Header Right */
+
+.dashboard-header-right {
+  display: flex;
+
+  align-items: center;
+
+  gap: 20px;
+}
+
+
+/* Notification */
+
+.notification-icon {
+  color: #13b990;
+
+  font-size: 20px;
+}
+
+
+/* Date and Time */
+
+.date-time {
+  border: 1px solid #d5d5d5;
+
+  background-color: #f5f5f5;
+
+  padding: 7px 12px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  font-size: 10px;
+
+  font-weight: 600;
+}
+
+
+.date-time svg {
+  color: #13b990;
+}
+
+
+/* =========================================================
+   DASHBOARD CONTENT
+========================================================= */
+
+.dashboard-content {
+  padding: 20px;
+}
+
+
+/* =========================================================
+   WELCOME
+========================================================= */
+
+/* =========================================================
+   DASHBOARD BANNER
+========================================================= */
+
+.dashboard-banner {
+  position: relative;
+  min-height: 165px;
+  margin-bottom: 30px;
+  padding: 28px 32px;
+  box-sizing: border-box;
+
+  border-radius: 14px;
+
+  background: linear-gradient(
+    135deg,
+    #117849 0%,
+    #1b9a62 100%
+  );
+
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  overflow: hidden;
+
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+
+/* Banner text */
+
+.banner-content {
+  position: relative;
+  z-index: 2;
+  max-width: 650px;
+}
+
+
+.banner-label {
+  display: inline-block;
+
+  margin-bottom: 8px;
+
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+
+  color: rgba(255, 255, 255, 0.75);
+}
+
+
+.dashboard-banner h2 {
+  margin: 0 0 8px;
+
+  font-size: 25px;
+  font-weight: 700;
+
+  color: white;
+}
+
+
+.dashboard-banner p {
+  margin: 0 0 18px;
+
+  font-size: 11px;
+  line-height: 18px;
+
+  color: rgba(255, 255, 255, 0.88);
+}
+
+
+/* Banner button */
+
+.banner-button {
+  padding: 9px 16px;
+
+  border: none;
+  border-radius: 5px;
+
+  background-color: white;
+  color: #117849;
+
+  font-size: 10px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+}
+
+
+.banner-button:hover {
+  background-color: #f0f0f0;
+  transform: translateY(-1px);
+}
+
+
+/* =========================================================
+   BANNER DECORATION
+========================================================= */
+
+.banner-decoration {
+  position: absolute;
+
+  right: -30px;
+  top: -50px;
+
+  width: 250px;
+  height: 250px;
+}
+
+
+.decoration-circle {
+  position: absolute;
+
+  border-radius: 50%;
+
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+
+.circle-one {
+  width: 210px;
+  height: 210px;
+
+  right: 0;
+  top: 20px;
+}
+
+
+.circle-two {
+  width: 140px;
+  height: 140px;
+
+  right: 55px;
+  top: 55px;
+
+  background-color: rgba(255, 255, 255, 0.07);
+}
+
+
+.circle-three {
+  width: 75px;
+  height: 75px;
+
+  right: 90px;
+  top: 90px;
+
+  background-color: rgba(255, 255, 255, 0.06);
+}
+
+/* =========================================================
+   STATISTICS
+========================================================= */
+
+.stats-container {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 30px;
+
+  margin-bottom: 30px;
+}
+
+
+/* Stat Card */
+
+.stat-card {
+  min-height: 85px;
+
+  border: 1px solid #d5d5d5;
+
+  border-radius: 8px;
+
+  padding: 14px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 18px;
+
+  box-sizing: border-box;
+}
+
+
+/* Stat Icon */
+
+.stat-icon {
+  width: 42px;
+
+  height: 42px;
+
+  border-radius: 50%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  color: white;
+
+  font-size: 20px;
+
+  flex-shrink: 0;
+}
+
+
+/* Product Icon */
+
+.products-icon {
+  background-color: #2876c8;
+}
+
+
+/* Transport Icon */
+
+.transport-icon {
+  background-color: #7650b9;
+}
+
+
+/* Announcement Icon */
+
+.announcement-icon {
+  background-color: #12b78e;
+}
+
+
+/* Stat Details */
+
+.stat-details h3 {
+  margin: 0 0 5px;
+
+  font-size: 11px;
+
+  color: #176b4f;
+}
+
+
+.stat-details strong {
+  display: block;
+
+  font-size: 22px;
+
+  color: #111111;
+}
+
+
+.stat-details p {
+  margin: 3px 0 0;
+
+  font-size: 9px;
+
+  font-weight: 600;
+}
+
+
+/* =========================================================
+   LOWER CONTENT
+========================================================= */
+
+.dashboard-lower {
+  display: grid;
+
+  grid-template-columns: 1.2fr 1fr;
+
+  gap: 30px;
+}
+
+
+/* =========================================================
+   PANELS
+========================================================= */
+
+.market-overview,
+.recent-activities {
+  border: 1px solid #d5d5d5;
+
+  border-radius: 10px;
+
+  min-height: 340px;
+
+  padding: 18px;
+
+  box-sizing: border-box;
+}
+
+
+/* Panel Headings */
+
+.market-overview h2,
+.recent-activities h2 {
+  margin: 0 0 25px;
+
+  font-size: 14px;
+
+  color: #176b4f;
+}
+
+
+/* =========================================================
+   CHART
+========================================================= */
+
+.chart-area {
+  width: 100%;
+
+  height: 220px;
+
+  border-top: 1px solid #eeeeee;
+
+  border-bottom: 1px solid #eeeeee;
+
+  padding: 10px 0;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   PAGE VIEWERS
+========================================================= */
+
+.page-viewers {
+  display: flex;
+
+  align-items: center;
+
+  gap: 15px;
+
+  margin-top: 20px;
+}
+
+
+.page-viewers svg {
+  font-size: 35px;
+
+  color: #888888;
+}
+
+
+.page-viewers h3 {
+  margin: 0 0 5px;
+
+  font-size: 10px;
+}
+
+
+.page-viewers strong {
+  font-size: 18px;
+}
+
+
+/* =========================================================
+   RECENT ACTIVITIES
+========================================================= */
+
+.activity-item {
+  min-height: 52px;
+
+  border-bottom: 1px solid #dddddd;
+
+  display: grid;
+
+  grid-template-columns: 25px 1fr auto;
+
+  align-items: center;
+
+  gap: 10px;
+}
+
+
+/* Activity Icon */
+
+.activity-item svg {
+  color: #2876c8;
+
+  font-size: 14px;
+}
+
+
+/* Activity Title */
+
+.activity-item strong {
+  display: block;
+
+  font-size: 9px;
+
+  color: #222222;
+}
+
+
+/* Activity Description */
+
+.activity-item p {
+  margin: 3px 0 0;
+
+  font-size: 9px;
+
+  color: #222222;
+}
+
+
+/* Activity Time */
+
+.activity-item > span {
+  font-size: 9px;
+
+  font-weight: 600;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 1000px) {
+
+  .stats-container {
+    grid-template-columns: 1fr 1fr;
+
+    gap: 15px;
+  }
+
+  .dashboard-lower {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+
+@media (max-width: 700px) {
+
+  .admin-sidebar {
+    width: 180px;
+  }
+
+  .stats-container {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboard-header-right {
+    gap: 8px;
+  }
+
+  .date-time {
+    display: none;
+  }
+
+  .dashboard-content {
+    padding: 15px;
+  }
+
+}
+
+
+@media (max-width: 500px) {
+
+  .admin-sidebar {
+    width: 160px;
+  }
+
+  .sidebar-brand h2 {
+    font-size: 16px;
+  }
+
+  .sidebar-brand p {
+    font-size: 9px;
+  }
+
+  .sidebar-item {
+    font-size: 10px;
+
+    padding: 10px 8px;
+  }
+
+}

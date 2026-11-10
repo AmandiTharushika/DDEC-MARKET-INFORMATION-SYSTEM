@@ -1,0 +1,955 @@
+/* =========================================
+   ADMIN PRODUCT CATEGORY PAGE
+========================================= */
+
+.admin-category-page {
+  width: 100%;
+  min-height: calc(100vh - 58px);
+
+  padding: 25px;
+
+  box-sizing: border-box;
+
+  background-color: #f8f9f8;
+}
+
+
+/* =========================================
+   PRODUCT CATEGORY BANNER
+========================================= */
+
+.category-page-banner {
+
+  position: relative;
+
+  min-height: 165px;
+
+  margin-bottom: 25px;
+
+  padding: 28px 32px;
+
+  box-sizing: border-box;
+
+  border-radius: 14px;
+
+  background: linear-gradient(
+    135deg,
+    #b8dec9 0%,
+    #8fc9aa 100%
+  );
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 25px;
+
+  overflow: hidden;
+
+  box-shadow: 0 6px 18px rgba(20, 108, 67, 0.14);
+}
+
+
+/* =========================================
+   BANNER CONTENT
+========================================= */
+
+.category-banner-content {
+
+  position: relative;
+
+  z-index: 2;
+
+  max-width: 650px;
+}
+
+
+.category-banner-label {
+
+  display: inline-block;
+
+  margin-bottom: 8px;
+
+  font-size: 9px;
+
+  font-weight: 700;
+
+  letter-spacing: 1.5px;
+
+  color: #286746;
+}
+
+
+.category-page-banner h1 {
+
+  margin: 0 0 8px;
+
+  font-size: 25px;
+
+  font-weight: 700;
+
+  color: #104d31;
+}
+
+
+.category-page-banner p {
+
+  margin: 0;
+
+  font-size: 11px;
+
+  line-height: 18px;
+
+  color: #285b43;
+}
+
+
+/* =========================================
+   BANNER ADD BUTTON
+========================================= */
+
+.category-page-banner .add-category-button {
+
+  position: relative;
+
+  z-index: 3;
+
+  flex-shrink: 0;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 7px;
+
+  padding: 10px 16px;
+
+  border: none;
+
+  border-radius: 6px;
+
+  background-color: #117849;
+
+  color: white;
+
+  font-size: 10px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  box-shadow: 0 3px 8px rgba(17, 120, 73, 0.20);
+
+  transition: 0.2s ease;
+}
+
+
+.category-page-banner .add-category-button:hover {
+
+  background-color: #0d613b;
+
+  transform: translateY(-1px);
+}
+
+
+/* =========================================
+   BANNER DECORATION
+========================================= */
+
+.category-banner-decoration {
+
+  position: absolute;
+
+  right: -30px;
+
+  top: -50px;
+
+  width: 250px;
+
+  height: 250px;
+
+  pointer-events: none;
+}
+
+
+.category-circle {
+
+  position: absolute;
+
+  border-radius: 50%;
+
+  background-color: rgba(255, 255, 255, 0.10);
+}
+
+
+.category-circle.circle-one {
+
+  width: 210px;
+
+  height: 210px;
+
+  right: 0;
+
+  top: 20px;
+}
+
+
+.category-circle.circle-two {
+
+  width: 140px;
+
+  height: 140px;
+
+  right: 55px;
+
+  top: 55px;
+
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+
+.category-circle.circle-three {
+
+  width: 75px;
+
+  height: 75px;
+
+  right: 90px;
+
+  top: 90px;
+
+  background-color: rgba(255, 255, 255, 0.07);
+}
+
+
+/* =========================================
+   SUMMARY CARDS
+========================================= */
+
+.category-summary {
+
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 18px;
+
+  margin-bottom: 25px;
+}
+
+
+.category-summary-card {
+
+  min-height: 85px;
+
+  padding: 18px 20px;
+
+  box-sizing: border-box;
+
+  background-color: white;
+
+  border: 1px solid #dddddd;
+
+  border-radius: 10px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 15px;
+
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+}
+
+
+.category-summary-icon {
+
+  width: 42px;
+
+  height: 42px;
+
+  border-radius: 8px;
+
+  background-color: #e3f5ed;
+
+  color: #117849;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  font-size: 16px;
+
+  flex-shrink: 0;
+}
+
+
+.category-summary-content {
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 5px;
+}
+
+
+.category-summary-content span {
+
+  font-size: 10px;
+
+  color: #777777;
+}
+
+
+.category-summary-content strong {
+
+  font-size: 20px;
+
+  font-weight: 700;
+
+  color: #176b4f;
+}
+
+
+/* =========================================
+   MANAGEMENT CARD
+========================================= */
+
+.category-management-card {
+
+  background-color: white;
+
+  border: 1px solid #dddddd;
+
+  border-radius: 10px;
+
+  overflow: hidden;
+}
+
+
+/* =========================================
+   CARD HEADER
+========================================= */
+
+.category-card-header {
+
+  padding: 20px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  border-bottom: 1px solid #eeeeee;
+}
+
+
+.category-card-header h2 {
+
+  margin: 0 0 5px;
+
+  font-size: 14px;
+
+  color: #176b4f;
+}
+
+
+.category-card-header p {
+
+  margin: 0;
+
+  font-size: 10px;
+
+  color: #777777;
+}
+
+
+/* =========================================
+   SEARCH
+========================================= */
+
+.category-search {
+
+  width: 220px;
+
+  height: 36px;
+
+  padding: 0 11px;
+
+  box-sizing: border-box;
+
+  border: 1px solid #cccccc;
+
+  border-radius: 7px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  background-color: white;
+}
+
+
+.category-search svg {
+
+  color: #777777;
+
+  font-size: 12px;
+}
+
+
+.category-search input {
+
+  width: 100%;
+
+  border: none;
+
+  outline: none;
+
+  font-size: 10px;
+
+  background-color: transparent;
+}
+
+
+/* =========================================
+   TABLE
+========================================= */
+
+.category-table-container {
+
+  width: 100%;
+
+  overflow-x: auto;
+}
+
+
+.category-table {
+
+  width: 100%;
+
+  border-collapse: collapse;
+
+  min-width: 750px;
+}
+
+
+.category-table th {
+
+  padding: 13px 15px;
+
+  background-color: #f5f7f6;
+
+  border-bottom: 1px solid #dddddd;
+
+  text-align: left;
+
+  font-size: 10px;
+
+  color: #555555;
+}
+
+
+.category-table td {
+
+  padding: 14px 15px;
+
+  border-bottom: 1px solid #eeeeee;
+
+  font-size: 10px;
+
+  color: #555555;
+}
+
+
+.category-table tbody tr:hover {
+
+  background-color: #f9fbfa;
+}
+
+
+/* =========================================
+   CATEGORY NAME
+========================================= */
+
+.category-name {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+}
+
+
+.category-name strong {
+
+  color: #222222;
+
+  font-size: 10px;
+}
+
+
+.category-small-icon {
+
+  width: 28px;
+
+  height: 28px;
+
+  border-radius: 6px;
+
+  background-color: #e3f5ed;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  color: #117849;
+
+  font-size: 12px;
+}
+
+
+/* =========================================
+   PRODUCT COUNT
+========================================= */
+
+.product-count {
+
+  min-width: 28px;
+
+  height: 25px;
+
+  padding: 0 8px;
+
+  border-radius: 5px;
+
+  background-color: #eef5ff;
+
+  color: #2876c8;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  font-size: 10px;
+
+  font-weight: 600;
+}
+
+
+/* =========================================
+   STATUS
+========================================= */
+
+.status-badge {
+
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 5px;
+
+  padding: 5px 8px;
+
+  border-radius: 15px;
+
+  background-color: #e5f7ef;
+
+  color: #117849;
+
+  font-size: 9px;
+
+  font-weight: 600;
+}
+
+
+/* =========================================
+   ACTION BUTTONS
+========================================= */
+
+.action-buttons {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 7px;
+}
+
+
+.action-buttons button {
+
+  width: 29px;
+
+  height: 29px;
+
+  border-radius: 5px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  cursor: pointer;
+
+  border: none;
+
+  font-size: 11px;
+
+  transition: 0.2s ease;
+}
+
+
+.edit-button {
+
+  background-color: #eaf3ff;
+
+  color: #2876c8;
+}
+
+
+.edit-button:hover {
+
+  background-color: #dcecff;
+}
+
+
+.delete-button {
+
+  background-color: #fff0f0;
+
+  color: #d95353;
+}
+
+
+.delete-button:hover {
+
+  background-color: #ffe0e0;
+}
+
+
+/* =========================================
+   ADD CATEGORY MODAL
+========================================= */
+
+.category-modal-overlay {
+
+  position: fixed;
+
+  top: 0;
+
+  left: 0;
+
+  right: 0;
+
+  bottom: 0;
+
+  background-color: rgba(0, 0, 0, 0.45);
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  z-index: 1000;
+}
+
+
+.category-modal {
+
+  width: 430px;
+
+  background-color: white;
+
+  border-radius: 10px;
+
+  padding: 25px;
+
+  box-sizing: border-box;
+
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+
+/* =========================================
+   MODAL HEADER
+========================================= */
+
+.modal-header {
+
+  display: flex;
+
+  align-items: flex-start;
+
+  justify-content: space-between;
+
+  margin-bottom: 22px;
+}
+
+
+.modal-header h2 {
+
+  margin: 0 0 5px;
+
+  font-size: 16px;
+
+  color: #176b4f;
+}
+
+
+.modal-header p {
+
+  margin: 0;
+
+  font-size: 10px;
+
+  color: #777777;
+}
+
+
+.modal-close {
+
+  width: 28px;
+
+  height: 28px;
+
+  border: none;
+
+  background-color: #f3f3f3;
+
+  border-radius: 5px;
+
+  font-size: 18px;
+
+  color: #555555;
+
+  cursor: pointer;
+}
+
+
+.modal-close:hover {
+
+  background-color: #e9e9e9;
+}
+
+
+/* =========================================
+   MODAL FORM
+========================================= */
+
+.modal-form-group {
+
+  margin-bottom: 18px;
+}
+
+
+.modal-form-group label {
+
+  display: block;
+
+  margin-bottom: 7px;
+
+  font-size: 10px;
+
+  font-weight: 600;
+
+  color: #333333;
+}
+
+
+.modal-form-group input,
+.modal-form-group textarea {
+
+  width: 100%;
+
+  padding: 10px;
+
+  box-sizing: border-box;
+
+  border: 1px solid #cccccc;
+
+  border-radius: 6px;
+
+  outline: none;
+
+  font-family: inherit;
+
+  font-size: 10px;
+}
+
+
+.modal-form-group input:focus,
+.modal-form-group textarea:focus {
+
+  border-color: #117849;
+}
+
+
+.modal-form-group textarea {
+
+  resize: vertical;
+}
+
+
+/* =========================================
+   MODAL BUTTONS
+========================================= */
+
+.modal-actions {
+
+  display: flex;
+
+  justify-content: flex-end;
+
+  gap: 10px;
+
+  margin-top: 22px;
+}
+
+
+.cancel-modal-button,
+.save-category-button {
+
+  padding: 10px 15px;
+
+  border-radius: 6px;
+
+  font-size: 10px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+
+.cancel-modal-button {
+
+  border: 1px solid #cccccc;
+
+  background-color: white;
+
+  color: #555555;
+}
+
+
+.cancel-modal-button:hover {
+
+  background-color: #f5f5f5;
+}
+
+
+.save-category-button {
+
+  border: none;
+
+  background-color: #117849;
+
+  color: white;
+}
+
+
+.save-category-button:hover {
+
+  background-color: #0d613b;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 850px) {
+
+  .category-summary {
+
+    grid-template-columns: 1fr;
+  }
+
+
+  .category-page-banner {
+
+    align-items: flex-start;
+
+    flex-direction: column;
+
+    gap: 15px;
+  }
+
+
+  .category-card-header {
+
+    align-items: flex-start;
+
+    flex-direction: column;
+
+    gap: 15px;
+  }
+
+
+  .category-search {
+
+    width: 100%;
+  }
+}
+
+
+@media (max-width: 500px) {
+
+  .admin-category-page {
+
+    padding: 15px;
+  }
+
+
+  .category-page-banner {
+
+    padding: 22px;
+
+    min-height: 150px;
+  }
+
+
+  .category-page-banner h1 {
+
+    font-size: 21px;
+  }
+
+
+  .category-page-banner p {
+
+    font-size: 10px;
+  }
+
+
+  .category-page-banner .add-category-button {
+
+    width: 100%;
+  }
+
+
+  .category-modal {
+
+    width: calc(100% - 30px);
+
+    padding: 20px;
+  }
+}
